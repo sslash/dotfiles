@@ -1,0 +1,33 @@
+{
+  "env": {
+    "node": true,
+    "browser" : true,
+    "mocha" : true
+  },
+
+  "rules": {
+    "brace-style": [2, "1tbs"],
+    "quotes": [2, "single"],
+    "strict": 0,
+    "no-constant-condition" : 2,
+    "no-comma-dangle" : 2,
+    "no-debugger" : 1,
+    "no-dupe-keys" : 2,
+    "no-ex-assign" : 2,
+    "no-extra-parens" : 2,
+    "no-func-assign" : 1,
+    "no-sparse-arrays" : 2,
+    "no-unreachable" : 2,
+    "no-console": 1,
+    "use-isnan" : 2,
+    "no-use-before-define": 0,
+
+    "block-scoped-var" : 0,
+    "curly" : 2,
+    "dot-notation" : 2,
+    "eqeqeq" : 2,
+    "guard-for-in" : 2,
+    "no-yoda" : 2,
+    "radix" : 2
+  }
+}
