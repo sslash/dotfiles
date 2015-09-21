@@ -1,0 +1,22 @@
+".source.js":
+    "React: component skeleton":
+          prefix: "rcc6"
+          body: """
+          import React from 'react';
+
+          class $1 extends React.Component {
+
+              render () {
+
+              }
+          }
+
+          $1.propTypes = {
+
+          };
+          $1.defaultProps = {
+
+          };
+
+          export default ${1};
+          """
