@@ -1,22 +1,76 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
 ".source.js":
-    "React: component skeleton":
-          prefix: "rcc6"
-          body: """
-          import React from 'react';
+    "sap":
+          prefix: "sap"
+          body: """console.log(`SAP! $1`, $2);"""
+    "PropTypes object":
+        prefix: "pto"
+        body: """$1: React.PropTypes.object"""
+    "PropTypes string":
+        prefix: "pta"
+        body: """$1: React.PropTypes.array"""
+    "PropTypes elem":
+        prefix: "ptn"
+        body: """$1: React.PropTypes.node"""
+    "PropTypes func":
+        prefix: "ptf"
+        body: """$1: React.PropTypes.func"""
+    "PropTypes string":
+        prefix: "pts"
+        body: """$1: React.PropTypes.string"""
 
-          class $1 extends React.Component {
+".source.jsx":
+    "create class":
+        prefix: "class"
+        body: """
+            import React, {PropTypes} from 'react';
 
-              render () {
+            export default class $1 extends React.Component {
+                static propTypes: {
+                }
 
-              }
-          }
-
-          $1.propTypes = {
-
-          };
-          $1.defaultProps = {
-
-          };
-
-          export default ${1};
-          """
+                render () {
+                    return (
+                    <div></div>
+                    );
+                }
+            }
+            """
+    "PropTypes object":
+        prefix: "pto"
+        body: """$1: React.PropTypes.object"""
+    "PropTypes string":
+        prefix: "pta"
+        body: """$1: React.PropTypes.array"""
+    "PropTypes elem":
+        prefix: "ptn"
+        body: """$1: React.PropTypes.node"""
+    "PropTypes func":
+        prefix: "ptf"
+        body: """$1: React.PropTypes.func"""
+    "PropTypes string":
+        prefix: "pts"
+        body: """$1: React.PropTypes.string"""
+    "sap":
+          prefix: "sap"
+          body: """console.log(`SAP! $1`, $2);"""
